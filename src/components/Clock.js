@@ -8,6 +8,9 @@ const Clock = () => {
   let am=hours>=12?"PM":"AM";
 
 
+  if(hours>12){
+    hours=hours-12;
+  }
 
   const [second, setSecond] = useState(seconds);
 
